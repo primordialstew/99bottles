@@ -33,3 +33,13 @@ def test_verse_with_1_bottle():
         "no more bottles of beer on the wall.\n"
     )
     assert Bottles().verse(1) == expected
+
+
+def test_verse_with_0_bottles():
+
+    expected = (
+        "No more bottles of beer on the wall, no more bottles of beer.\n"
+        "Go to the store and buy some more, "
+        "99 bottles of beer on the wall.\n"
+    )
+    assert Bottles().verse(0) == expected
