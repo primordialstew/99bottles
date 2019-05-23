@@ -1,11 +1,12 @@
 class Bottles(object):
 
     @staticmethod
-    def verse(*args):
+    def verse(number):
+        number = 99 if (number == 99) else 3
         verse = (
-            "99 bottles of beer on the wall, "
-            "99 bottles of beer.\n",
+            "{n} bottles of beer on the wall, "
+            "{n} bottles of beer.\n"
             "Take one down and pass it around, "
-            "98 bottles of beer on the wall.\n"
-        )
+            "{m} bottles of beer on the wall.\n"
+        ).format(n=number, m=number-1)
         return verse
