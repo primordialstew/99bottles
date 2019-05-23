@@ -1,6 +1,10 @@
 class Bottles(object):
 
     @staticmethod
+    def song():
+        pass
+
+    @staticmethod
     def verse(number):
         if number == 0:
             verse = (
