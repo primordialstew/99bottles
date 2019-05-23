@@ -31,3 +31,7 @@ class Bottles(object):
                 "{m} bottles of beer on the wall.\n"
             ).format(n=number, m=number-1)
         return verse
+
+    @staticmethod
+    def verses(a, b):
+        pass
