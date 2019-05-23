@@ -2,7 +2,7 @@ class Bottles(object):
 
     @staticmethod
     def song():
-        pass
+        return Bottles.verses(99, 0)
 
     @staticmethod
     def verse(number):
