@@ -5,6 +5,12 @@ class Bottles(object):
         return Bottles.verses(99, 0)
 
     @staticmethod
+    def verses(starting, ending):
+        range_ = range(starting, ending - 1, -1)
+        verses = "\n".join([Bottles.verse(n) for n in range_])
+        return verses
+
+    @staticmethod
     def verse(number):
         if number == 0:
             verse = (
@@ -35,9 +41,3 @@ class Bottles(object):
                 "{m} bottles of beer on the wall.\n"
             ).format(n=number, m=number-1)
         return verse
-
-    @staticmethod
-    def verses(starting, ending):
-        range_ = range(starting, ending - 1, -1)
-        verses = "\n".join([Bottles.verse(n) for n in range_])
-        return verses
