@@ -33,5 +33,7 @@ class Bottles(object):
         return verse
 
     @staticmethod
-    def verses(a, b):
-        return Bottles.verse(a) + "\n" + Bottles.verse(b)
+    def verses(starting, ending):
+        range_ = range(starting, ending - 1, -1)
+        verses = "\n".join([Bottles.verse(n) for n in range_])
+        return verses
