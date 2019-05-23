@@ -34,4 +34,4 @@ class Bottles(object):
 
     @staticmethod
     def verses(a, b):
-        pass
+        return Bottles.verse(a) + "\n" + Bottles.verse(b)
