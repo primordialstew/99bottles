@@ -2,9 +2,17 @@ class Bottles(object):
 
     @staticmethod
     def verse(number):
-        if number == 1:
+        if number == 0:
             verse = (
-                "1 bottle of beer on the wall, 1 bottle of beer.\n"
+                "No more bottles of beer on the wall, "
+                "no more bottles of beer.\n"
+                "Go to the store and buy some more, "
+                "99 bottles of beer on the wall.\n"
+            )
+        elif number == 1:
+            verse = (
+                "1 bottle of beer on the wall, "
+                "1 bottle of beer.\n"
                 "Take it down and pass it around, "
                 "no more bottles of beer on the wall.\n"
             )
