@@ -2,7 +2,6 @@ class Bottles(object):
 
     @staticmethod
     def verse(number):
-        number = 99 if (number == 99) else 3
         verse = (
             "{n} bottles of beer on the wall, "
             "{n} bottles of beer.\n"
