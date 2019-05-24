@@ -1,4 +1,7 @@
 # 99bottles
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2fa2194d57564a68b37796c4eda2dd96)](https://app.codacy.com/app/primordialstew/99bottles?utm_source=github.com&utm_medium=referral&utm_content=primordialstew/99bottles&utm_campaign=Badge_Grade_Dashboard)
+
 [99 Bottles of Object Oriented Programming](99bottles) is a book by
 [Sandi Metz](Metz) and [Katrina Owen](Owen). It encourages the reader to
 "code-along" as the authors explore the _process_ of writing clean,
