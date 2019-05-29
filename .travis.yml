@@ -1,6 +1,6 @@
 language: python
 
-python: 3.7.3
+python: 3.7
 
 # Disable sudo to speed up the build
 #sudo: false
