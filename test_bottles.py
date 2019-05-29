@@ -7,10 +7,6 @@ from bottles import Bottles
 def whole_song():
     return "\n".join(SONG)
 
-def test_fail():
-    # Adding some nonsense to test Travis CI trigger
-    assert True == False
-
 def test_the_first_verse():
     expected = (
         "99 bottles of beer on the wall, "
