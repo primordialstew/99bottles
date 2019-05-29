@@ -9,11 +9,11 @@ install:
   - pip install -r requirements.txt
 
 script:
-	# Set Codacy token (code quality service)
-	- export CODACY_PROJECT_TOKEN=2fa2194d57564a68b37796c4eda2dd96
+  # Set Codacy token (code quality service)
+  - export CODACY_PROJECT_TOKEN=2fa2194d57564a68b37796c4eda2dd96
 
-	# Generate a coverage report in xml format
-	- pytest --cov-report=xml --cov=.
+  # Generate a coverage report in xml format
+  - pytest --cov-report=xml --cov=.
 
-	# Submit coverage report to Codacy
-	- python-codacy-coverage -r coverage.xml
+  # Submit coverage report to Codacy
+  - python-codacy-coverage -r coverage.xml
