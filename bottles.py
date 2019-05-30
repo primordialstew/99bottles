@@ -18,7 +18,7 @@ class Bottles(object):
         return container
 
     @staticmethod
-    def pronoun():
+    def pronoun(number="FIXME"):
         return "one"
 
     @staticmethod
