@@ -25,6 +25,10 @@ class Bottles(object):
         return pronoun
 
     @staticmethod
+    def quantity():
+        pass
+
+    @staticmethod
     def verse(number):
         if number == 0:
             verse = (
