@@ -11,7 +11,7 @@ class Bottles(object):
         return verses
 
     @staticmethod
-    def container(number="FIXME"):
+    def container(number):
         container = "bottles"
         if number == 1:
             container = "bottle"
@@ -32,17 +32,6 @@ class Bottles(object):
                 "1 bottle of beer.\n"
                 "Take it down and pass it around, "
                 "no more bottles of beer on the wall.\n"
-            )
-        elif number == 2:
-            verse = (
-                "{n} bottles of beer on the wall, "
-                "{n} bottles of beer.\n"
-                "Take one down and pass it around, "
-                "{m} {container} of beer on the wall.\n"
-            ).format(
-                n=number,
-                m=number-1,
-                container=Bottles.container(number-1),
             )
         else:
             verse = (
