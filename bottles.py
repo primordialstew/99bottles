@@ -11,6 +11,11 @@ class Bottles(object):
         return verses
 
     @staticmethod
+    def container():
+        container = "bottles"
+        return container
+
+    @staticmethod
     def verse(number):
         if number == 0:
             verse = (
