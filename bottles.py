@@ -25,8 +25,10 @@ class Bottles(object):
         return pronoun
 
     @staticmethod
-    def quantity(number="FIXME"):
-        quantity = "no more"
+    def quantity(number=0):
+        quantity = number
+        if number == 0:
+            quantity = "no more"
         return quantity
 
     @staticmethod
