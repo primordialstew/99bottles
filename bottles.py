@@ -19,7 +19,7 @@ class Bottles(object):
 
     @staticmethod
     def pronoun():
-        pass
+        return "one"
 
     @staticmethod
     def verse(number):
