@@ -28,11 +28,11 @@ class Bottles(object):
             )
         elif number == 1:
             verse = (
-                "{n} bottle of beer on the wall, "
-                "{n} bottle of beer.\n"
+                "{n} {container} of beer on the wall, "
+                "{n} {container} of beer.\n"
                 "Take it down and pass it around, "
                 "no more bottles of beer on the wall.\n"
-            ).format(n=number)
+            ).format(n=number, container=Bottles.container(number))
         else:
             verse = (
                 "{n} bottles of beer on the wall, "
