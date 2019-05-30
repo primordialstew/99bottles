@@ -11,7 +11,7 @@ class Bottles(object):
         return verses
 
     @staticmethod
-    def container():
+    def container(number="FIXME"):
         container = "bottles"
         return container
 
