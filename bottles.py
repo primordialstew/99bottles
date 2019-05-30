@@ -51,7 +51,7 @@ class Bottles(object):
                 "{m} {container_after} of beer on the wall.\n"
             ).format(
                 n=number,
-                pronoun=Bottles.pronoun(),
+                pronoun=Bottles.pronoun(number),
                 container=Bottles.container(number),
                 m=number-1,
                 container_after=Bottles.container(number-1),
