@@ -43,9 +43,10 @@ class Bottles(object):
                 "{n} {container} of beer on the wall, "
                 "{n} {container} of beer.\n"
                 "Take {pronoun} down and pass it around, "
-                "no more bottles of beer on the wall.\n"
+                "{quantity} bottles of beer on the wall.\n"
             ).format(
                 n=number,
+                quantity=Bottles.quantity(),
                 container=Bottles.container(number),
                 pronoun=Bottles.pronoun(number),
             )
