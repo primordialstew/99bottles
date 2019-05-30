@@ -37,11 +37,12 @@ class Bottles(object):
             verse = (
                 "{n} {container} of beer on the wall, "
                 "{n} {container} of beer.\n"
-                "Take it down and pass it around, "
+                "Take {pronoun} down and pass it around, "
                 "no more bottles of beer on the wall.\n"
             ).format(
                 n=number,
-                container=Bottles.container(number)
+                container=Bottles.container(number),
+                pronoun=Bottles.pronoun(number),
             )
         else:
             verse = (
