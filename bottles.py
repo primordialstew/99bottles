@@ -32,7 +32,10 @@ class Bottles(object):
                 "{n} {container} of beer.\n"
                 "Take it down and pass it around, "
                 "no more bottles of beer on the wall.\n"
-            ).format(n=number, container=Bottles.container(number))
+            ).format(
+                n=number,
+                container=Bottles.container(number)
+            )
         else:
             verse = (
                 "{n} {container} of beer on the wall, "
