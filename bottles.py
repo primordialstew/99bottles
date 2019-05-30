@@ -13,6 +13,8 @@ class Bottles(object):
     @staticmethod
     def container(number="FIXME"):
         container = "bottles"
+        if number == 1:
+            container = "bottle"
         return container
 
     @staticmethod
