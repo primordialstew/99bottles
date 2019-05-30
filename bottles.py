@@ -35,12 +35,13 @@ class Bottles(object):
             ).format(n=number, container=Bottles.container(number))
         else:
             verse = (
-                "{n} bottles of beer on the wall, "
-                "{n} bottles of beer.\n"
+                "{n} {container} of beer on the wall, "
+                "{n} {container} of beer.\n"
                 "Take one down and pass it around, "
                 "{m} {container_after} of beer on the wall.\n"
             ).format(
                 n=number,
+                container=Bottles.container(number),
                 m=number-1,
                 container_after=Bottles.container(number-1),
             )
