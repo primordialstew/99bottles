@@ -19,7 +19,10 @@ class Bottles(object):
 
     @staticmethod
     def pronoun(number="FIXME"):
-        return "one"
+        pronoun = "one"
+        if number == 1:
+            pronoun = "it"
+        return pronoun
 
     @staticmethod
     def verse(number):
