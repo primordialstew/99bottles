@@ -26,7 +26,8 @@ class Bottles(object):
 
     @staticmethod
     def quantity():
-        pass
+        quantity = "no more"
+        return quantity
 
     @staticmethod
     def verse(number):
