@@ -18,6 +18,10 @@ class Bottles(object):
         return container
 
     @staticmethod
+    def pronoun():
+        pass
+
+    @staticmethod
     def verse(number):
         if number == 0:
             verse = (
